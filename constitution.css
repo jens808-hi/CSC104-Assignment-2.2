@@ -1,0 +1,67 @@
+/* Styling for the body of my page */
+body{
+    position: relative; /* Makes the body a reference point for anything placed inside it */
+    display: flex; /* Sets up a flexible box layout for items inside the body */
+    justify-content: flex-start; /* Aligns items inside the body to the left horizontally */
+    align-items: center; /* Aligns items inside the body vertically to the center */
+    height: 390vh; /* Sets the height of the body to 390% times the height of the screen */
+    font-weight: 500; /* Sets the font weight to medium thick */
+    font-family: 'Lucida Sans Regular', sans-serif; /* Sets the style of the text */
+    color: black; /* Sets the default text color to black */
+}
+
+    /* Creates an invisible layer behind the content of my page */
+    body::before {
+        content: ''; /* Creates an invisible block element to use as an overlay */
+        position: absolute; /* Ensure the invisible block is placed over the entire page */
+        top: 0px; /* Positions the top edge of the overlay to the very top of the page */
+        right: 0px; /* Positions the right edge of the overlay to the furthest right of the page */
+        bottom: 0px; /* Positions the bottom edge of the overlay to the very bottom of the page */
+        left: 0px; /* Positions the left edge of the overlay to the furthest left of the page */
+        background-image: url('us-constitution-flag.png'); /* Uses designated image as the background of the overlay */
+        background-size: cover; /* Makes sure the background image fills the entire overlay area */
+        background-position: left center; /* Positions the image to the left and vertically in the center */
+        opacity: 0.2; /* Makes the overlay a little bit transparent so content can still be seen through it */
+        z-index: -1; /* Ensures this overlay stays behind all other content on the page */
+    }
+
+/* Styling for <h1> elements */
+h1{
+    text-align: left; /* Aligns the text to the left side of the page */
+    margin-left: 5px; /* Adds a small space (5px) to the left of the heading */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Specifies a list of font styles to use, starting with Verdana and falling back to other fonts */
+    color: crimson; /* Sets the text color to a bright red */
+    border: 10px; /* Adds a 10px border around the heading */
+    border-color: black; /* Sets the border color to black */
+    border-radius: 10px; /* Rounds the corners of the border by 10px */
+}
+
+/* Styling for <h2> elements */
+h2{
+    text-align: left;/* Aligns the text to the left side of the page */
+    margin-left: 5px; /* Adds a small space (5px) to the left of the heading */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Specifies a list of font styles to use, starting with Cambria and falling back to other fonts */
+    color: rgb(10, 4, 123); /* Sets the text color to a dark blue using RGB color values */
+}
+
+/* Styling for <h3> elements */
+h3{
+    text-align: left; /* Aligns the text to the left side of the page */
+    margin-left: 5px; /* Adds a small space (5px) to the left of the heading */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Specifies a list of font styles to use, starting with Franklin Gothic and falling back to other fonts */
+    color: rgb(4, 95, 47); /* Sets the text color to a dark green using RGB color values */
+}
+
+/* Styling for <h4> elements */
+h4{
+    text-align: left; /* Aligns the text to the left side of the page */
+    margin-left: 5px; /* Adds a small space (5px) to the left of the heading */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Specifies a list of font styles to use, starting with Franklin Gothic and falling back to other fonts */
+    color: rgb(2, 10, 88); /* Sets the text color to a deep blue using RGB color values */
+}
+
+#flagWaving{
+    border-color: black; /* Sets the border color to black */
+    width: 300px; /* Makes the width of the element 300px wide */
+    margin-left: 20px; /* Adds a 20px space to the left of the element */
+}
