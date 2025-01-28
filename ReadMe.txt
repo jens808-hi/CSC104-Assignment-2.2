@@ -35,7 +35,7 @@ Requirements
 Usage
 
 1. Download or clone the repository. 
-   git clone https://github.com/jens808-hi/CSC104-Assignment-2.2
+   git clone https://github.com/jens808-hi/CSC104-Assignment-2.2.git
 2. Ensure that the following files are in the same directory: 
 	* constitution1.html (main HTML file)
 	* constitution.css (CSS file for styling)
